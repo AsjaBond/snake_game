@@ -1,0 +1,124 @@
+/* General Reset */
+body, h1, h2, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Game Container */
+#game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between game area and scoreboard */
+}
+
+#game-area {
+    position: relative;
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+/* Scoreboard */
+#scoreboard {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#scoreboard h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#scoreboard h2 {
+    font-size: 18px;
+}
+
+#scoreTable {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#scoreTable th, #scoreTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#scoreTable th {
+    background-color: #f0f0f0;
+}
+#resetScoresButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #636466; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#resetScoresButton:hover {
+    background-color: #141414; /* Darker blue on hover */
+}
+
+#resetScoresButton:active {
+    transform: scale(0.98); /* Slightly scale down on click */
+}
+
+#resetScoresButton:focus {
+    outline: none; /* Remove default focus outline */
+}

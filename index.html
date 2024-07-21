@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="tutorial" class="content-section">
+            <h1>Tutorial</h1>
+            <p>Use the arrow keys to move the snake. Eat the red fruit to grow and score points.</p>
+        </section>
+        <section id="game" class="content-section">
+            <div id="game-container">
+                <div id="game-area">
+                    <canvas id="gameCanvas"></canvas>
+                </div>
+                <div id="scoreboard">
+                    <h1>Top 5 Scores
+                    </h1>
+                    <table id="scoreTable">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>0</td></tr>
+                            <tr><td>2</td><td>0</td></tr>
+                            <tr><td>3</td><td>0</td></tr>
+                            <tr><td>4</td><td>0</td></tr>
+                            <tr><td>5</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                    <h2>Current Score: <span id="score">0</span></h2>
+                    <button id="resetScoresButton">Reset Scores</button> 
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
